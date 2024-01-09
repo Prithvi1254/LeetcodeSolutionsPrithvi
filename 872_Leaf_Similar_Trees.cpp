@@ -16,12 +16,7 @@ public:
         if(root1==NULL or root2==NULL) return false;
         help(root1,ans1);
         help(root2,ans2);
-        int n=ans1.size();
-        int m=ans2.size();
-        if(n!=m) return false;
-        for(int i=0;i<n;i++){
-            if(ans1[i]!=ans2[i]) return false;
-        }
-        return true;
+        
+        return ans1==ans2;
     }
 };
