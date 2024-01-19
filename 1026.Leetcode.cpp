@@ -5,7 +5,7 @@ public:
             return mx - mn;
         mx = max(mx, r->val);
         mn = min(mn, r->val);
-        return max(maxAncestorDiff(r->left, mn, mx),
+        return  max(maxAncestorDiff(r->left, mn, mx),
                    maxAncestorDiff(r->right, mn, mx));
     }
 };
